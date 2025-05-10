@@ -1,21 +1,28 @@
 body {
   color: hsl(0, 0%, 100%);
   background-color: hsl(0, 0%, 8%);
-  font-family: Arial, sans-serif;
+  font-family: 'Inter', sans-serif;
+  display: flex; /* Enable Flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Make the body take up the full viewport height */
+  margin: 0; /* Remove default margin */
+  padding: 0;
+  width: 100%;
 }
 
 .card {
-  display: flex;
+  display: flex; /* Enable Flexbox */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center; /* Center children vertically */
+  align-items: center; /* Center children horizontally */
+  text-align: center; /* Center text */
   background-color: hsl(0, 0%, 12%);
-  border-radius: 8px;
+  border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   padding: 20px;
   margin: 20px auto;
   max-width: 400px;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-
 }
 
 .profilePic {
@@ -26,6 +33,29 @@ body {
   margin-bottom: 20px;
 }
 
+h1 {
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+h5 {
+  font-size: 14px;
+  margin: 5px;
+  color: hsl(75, 94%, 57%)
+}
+
+p {
+  font-size: 14px;
+  padding: 15px 0 0 0;
+  color: hsl(0, 0%, 80%)
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
 li {
   list-style: none;
   margin: 15px;
@@ -33,6 +63,14 @@ li {
   background-color: hsl(0, 0%, 20%);
   border-radius: 10px;
   font-weight: bold;
+  width: 300px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+li:hover {
+  background-color: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 8%);
 }
 
 .attribution {
